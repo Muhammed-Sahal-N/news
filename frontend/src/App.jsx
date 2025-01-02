@@ -2,15 +2,17 @@ import React from 'react'
 import { BrowserRouter,  Route,  Routes } from 'react-router-dom'
 import SignInForm from './auth/forms/SignInForm'
 import SignUpForm from './auth/forms/SignUpForm'
+import Header from './components/shared/Header'
 import About from './pages/About'
 import Dashboard from './pages/Dashboard'
 import Home from './pages/Home'
 import NewsArticles from './pages/NewsArticles'
-
+Header
 
 const App = () => {
   return (
     <BrowserRouter>
+    <Header/>
     <Routes>
 
       <Route path="/sign-in" element={<SignInForm/>}/>
